@@ -1,0 +1,32 @@
+.fullscreen {
+  height: 100dvh;
+}
+
+.nav .active {
+  background-color: rgb(36, 36, 36) !important;
+}
+
+.sideNavBtn {
+  --bs-nav-link-padding-y: 0.4rem;
+  --bs-nav-link-padding-x: 0.4rem;
+  --bs-nav-link-font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .sideNavBtn {
+    --bs-nav-link-padding-y: 0.4rem;
+    --bs-nav-link-padding-x: 0.4rem;
+    --bs-nav-link-font-size: 1.5rem;
+  }
+}
+
+.offcanvas-start {
+  width: 50dvw !important;
+  backdrop-filter: blur(10px) saturate(180%);
+  -webkit-backdrop-filter: blur(10px) saturate(180%);
+}
+
+.offcanvas {
+  --bs-offcanvas-border-width: 0px !important;
+  --bs-offcanvas-transition: transform 0.2s ease-in-out !important;
+}
