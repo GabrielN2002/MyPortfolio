@@ -46,7 +46,7 @@
   </head>
 
   <body>
-    <header class="bg-dark bg-opacity-50 p-1 d-md-none">
+    <header class="bg-dark bg-opacity-50 p-1 d-md-none sticky-top">
       <button
         class="btn fs-1"
         type="button"
@@ -61,7 +61,7 @@
       <div class="row d-flex justify-content-center align-items-center">
         <!--Sidebar Phone-->
         <div
-          class="col-2 col-sm-2 d-flex justify-content-center align-items-center bg-dark bg-opacity-50 fullscreen offcanvas offcanvas-start"
+          class="d-flex justify-content-center align-items-center bg-dark bg-opacity-50 fullscreen offcanvas offcanvas-start"
           tabindex="-1"
           id="offcanvasResponsive"
           aria-labelledby="offcanvasResponsiveLabel"
@@ -114,7 +114,7 @@
 
         <!--Sidebar Tablet and Desktop-->
 
-        <div class="col-2 col-sm-2 d-md-flex justify-content-center align-items-center bg-dark bg-opacity-50 fullscreen d-none">
+        <div class="col-2 col-sm-2 d-md-flex d-none bg-dark bg-opacity-50 fullscreen">
           <div
             class="nav flex-column nav-pills d-flex justify-content-center align-items-center py-5"
             id="v-pills-tab"
@@ -162,26 +162,58 @@
         </div>
 
         <!--Content-->
-        <div class="col-10 col-sm-10 py-4 fullscreen d-flex justify-content-center align-items-center">
+        <div class="col-10 col-sm-10">
           <div class="tab-content" id="v-pills-tabContent">
             <!--Home Tab-->
-            <div class="tab-pane fade show active border p-3 rounded" id="v-pills-home" role="tabpanel" tabindex="0">
-              <h1 class="my-4">Gabriel Nieves</h1>
-              <h3>About Me:</h3>
-              <p>Education: 1st year Computer Science Undergraduate</p>
-              <p>Interests: 3d Printing and Design, RF Communications, Aviation</p>
+            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" tabindex="0">
+              <div class="row d-flex justify-content-center py-4 g-3">
+                <div class="col-12 col-md-6">
+                  <div class="card shadow border-0 h-100">
+                    <div class="card-body">
+                      <div class="card-title border-bottom">
+                        <h1>Gabriel Nieves</h1>
+                      </div>
+                      <div class="card-text">
+                        <h3>About Me:</h3>
+                        <p>
+                          Education: 1st year Computer Science Undergraduate at Interamerican University of Puerto Rico Aguadilla
+                          Campus
+                        </p>
+                        <p>Interests: 3d Printing and Design, RF Communications, Aviation</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="card shadow border-0 h-100">
+                    <div class="card-body">
+                      <div class="card-title border-bottom">
+                        <h1>Skills</h1>
+                      </div>
+                      <div class="card-text">
+                        <h3>Website Design:</h3>
+                        <div class="list-group list-group-flush">
+                          <div class="list-group-item">HTML</div>
+                          <div class="list-group-item">CSS</div>
+                          <div class="list-group-item">Bootstrap</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
             <!--Projects Tab-->
-            <div class="tab-pane fade fullscreen" id="v-pills-projects" role="tabpanel" tabindex="0">
+            <div class="tab-pane fade" id="v-pills-projects" role="tabpanel" tabindex="0">
               <div class="container-fluid px-md-4">
-                <div class="row border-bottom p-5">
+                <div class="row border-bottom py-5">
                   <div class="col-12 col-md-9 d-flex justify-content-center align-items-center">
                     <h2>Websites</h2>
                   </div>
                   <div class="col-12 col-md-3 d-flex justify-content-center flex-column">
                     <img
                       src="projects/elCafetinGourmet/images/logo.png"
-                      class="h-100 img-fluid rounded my-3"
+                      class="h-100 img-fluid rounded my-3 shadow border-0"
                       alt="El Cafetin Gourmet Logo"
                     />
                     <button type="button" class="btn btn-dark">
@@ -192,14 +224,14 @@
               </div>
 
               <div class="container-fluid px-md-4">
-                <div class="row border-bottom p-5">
+                <div class="row border-bottom py-5">
                   <div class="col-12 col-md-9 d-flex justify-content-center align-items-center">
                     <h2>3d Models</h2>
                   </div>
                   <div class="col-12 col-md-3 d-flex justify-content-center flex-column">
                     <img
                       src="projects/3dmodels/images/stratuxCase.png"
-                      class="h-100 img-fluid rounded my-3"
+                      class="h-100 img-fluid rounded my-3 shadow border-0"
                       alt="Stratux Case 3d Model"
                     />
                     <button type="button" class="btn btn-dark">
