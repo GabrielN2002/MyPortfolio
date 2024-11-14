@@ -1,0 +1,49 @@
+.animation {
+  max-width: 100%; /* Prevent overflow */
+  height: 400px; /* Set a specific height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4px;
+}
+
+@media (min-width: 400px) {
+  .animation {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 6px;
+  }
+}
+
+#test {
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  text-align: center;
+  text-decoration: none;
+  padding: 6px 12px;
+}
+
+#airplane {
+  display: inline-block;
+  animation-name: moveAirplane;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes moveAirplane {
+  0% {
+    transform: rotate(90deg) translatey(0); 
+  }
+
+  50% {
+    transform: rotate(90deg) translatey(5px); 
+  }
+  100% {
+    transform: rotate(90deg) translatey(0px); 
+  }
+}
