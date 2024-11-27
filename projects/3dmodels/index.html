@@ -32,7 +32,9 @@
     <div class="container-fluid">
       <header>
         <div class="p-3">
-          <a class="text-decoration-none link-body-emphasis fs-3" href="/projects/index.html"><i class="bi bi-box-arrow-left"></i> Exit</a>
+          <a class="text-decoration-none link-body-emphasis fs-3" href="/projects/index.html"
+            ><i class="bi bi-box-arrow-left"></i> Exit</a
+          >
         </div>
       </header>
 
@@ -53,7 +55,7 @@
                   data-bs-toggle="modal"
                   data-bs-target="#coffeeCup"
                 >
-                  3d Model
+                  3D Model
                 </button>
               </div>
             </div>
@@ -74,15 +76,53 @@
                   data-bs-toggle="modal"
                   data-bs-target="#stratuxCase"
                 >
-                  3d Model
+                  3D Model
                 </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--ESP32 Garage Opener-->
+        <div class="col">
+          <div class="card shadow border-0 h-100">
+            <h4 class="m-3 ps-md-2">ESP32 Garage Opener</h4>
+            <img src="images/esp32GarageOpener.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <div class="row g-2">
+                <div class="col-12 col-lg-6">
+                  <div class="card-text mx-md-3 d-flex justify-content-center">
+                    <button
+                      type="button"
+                      style="--bs-btn-padding-y: 0.5rem; --bs-btn-padding-x: 3rem; --bs-btn-font-size: 1rem"
+                      class="btn btn-dark"
+                      data-bs-toggle="modal"
+                      data-bs-target="#esp32"
+                    >
+                      3D Model
+                    </button>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                  <div class="card-text mx-md-3 d-flex justify-content-center">
+                    <button
+                      type="button"
+                      style="--bs-btn-padding-y: 0.5rem; --bs-btn-padding-x: 3rem; --bs-btn-font-size: 1rem"
+                      class="btn btn-dark"
+                      data-bs-toggle="modal"
+                      data-bs-target="#esp32Pictures"
+                    >
+                      Pictures
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Modal -->
+      <!--Coffee Cup Modal -->
       <div
         class="modal fade"
         id="coffeeCup"
@@ -112,7 +152,7 @@
         </div>
       </div>
 
-      <!-- Modal -->
+      <!--Stratux Modal -->
       <div
         class="modal fade"
         id="stratuxCase"
@@ -136,6 +176,80 @@
                   width="100%"
                   frameborder="0"
                 ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--ESP32 Modal -->
+      <div
+        class="modal fade"
+        id="esp32"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content text-bg-dark bg-opacity-50 border-0">
+            <div class="modal-header border-bottom border-secondary">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">ESP32 Garage Opener</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="content">
+                <iframe
+                  src="https://app.vectary.com/p/6vhYs7ZHKwCS1GxRkASjwq"
+                  frameborder="0"
+                  width="100%"
+                  height="100%"
+                  allow="xr-spatial-tracking; fullscreen;"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--ESP32 Pictures Modal -->
+      <div
+        class="modal fade"
+        id="esp32Pictures"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content text-bg-dark bg-opacity-50 border-0">
+            <div class="modal-header border-bottom border-secondary">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">ESP32 Garage Opener</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="content">
+                <div id="esp32Carousel" class="carousel slide" data-bs-theme="dark">
+                  <div class="carousel-inner">
+                    
+                    <div class="carousel-item active">
+                      <img src="images/esp32Schematic.png" class="d-block w-100" alt="..." />
+                    </div>
+                    <div class="carousel-item">
+                      <img src="images/esp32Board.png" class="d-block w-100" alt="..." />
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#esp32Carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#esp32Carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
